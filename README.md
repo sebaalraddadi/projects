@@ -11,7 +11,7 @@ This project is an internal web system designed to streamline the documentation 
 * Allow employees to document tasks and upload attachments easily.
 * Enable the department head to track progress and evaluate performance efficiently.
 ---
-## ▶️ Project Demo / عرض عملي للمشروع
+## ▶️ Project Demo
 
 **Web App IT Task Documentation**
 [**Watch the System Demo**](https://youtu.be/gItEAEKElzA)
