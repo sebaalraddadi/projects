@@ -16,8 +16,8 @@ This project is an internal web system designed to streamline the documentation 
 
 ## Project Screenshots
 
-**1. Login Interface / واجهة تسجيل الدخول**
-![Login Page](https://raw.githubusercontent.com/sebaalraddadi/projects/main/Log_in.png)
+**1. Login Interface**
+![Login Page](https://raw.githubusercontent.com/sebaalraddadi/projects/main/log_in.png)
 
 **2. Send Task Interface / واجهة إرسال المهام**
 ![Send Task](https://raw.githubusercontent.com/sebaalraddadi/projects/main/send_task.png)
