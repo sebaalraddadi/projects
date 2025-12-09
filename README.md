@@ -11,7 +11,11 @@ This project is an internal web system designed to streamline the documentation 
 * Replace traditional manual methods with a unified digital system.
 * Allow employees to document tasks and upload attachments easily.
 * Enable the department head to track progress and evaluate performance efficiently.
+---
+## ▶️ Project Demo / عرض عملي للمشروع
 
+**Web App IT Task Documentation
+[**Watch the System Demo**](https://youtu.be/gItEAEKElzA)
 ---
 
 ## Project Screenshots
@@ -19,24 +23,19 @@ This project is an internal web system designed to streamline the documentation 
 **1. Login Interface**
 ![Login Page](https://raw.githubusercontent.com/sebaalraddadi/projects/main/log_in.png)
 
-**2. Send Task Interface / واجهة إرسال المهام**
+**2. Send Task Interface**
 ![Send Task](https://raw.githubusercontent.com/sebaalraddadi/projects/main/send_task.png)
 
-**3. Manager Dashboard / لوحة تحكم المدير**
+**3. Manager Dashboard**
 ![Dashboard](https://raw.githubusercontent.com/sebaalraddadi/projects/main/Manger_page.png)
 
-**4. Completed Tasks View / عرض المهام المنجزة**
+**4. Completed Tasks View**
 ![Completed Tasks](https://raw.githubusercontent.com/sebaalraddadi/projects/main/completed_tasks.png)
 
-**4. Export to Excel Feature / ميزة التصدير إلى إكسل**
+**4. Export to Excel Feature**
 ![Export to Excel](https://raw.githubusercontent.com/sebaalraddadi/projects/main/to_excel.png)
 
-**(Note: These screenshots represent the working prototype presented during the training).**
----
-## ▶️ Project Demo / عرض عملي للمشروع
-
-**Web App IT Task Documentation
-[**Watch the System Demo**](https://youtu.be/gItEAEKElzA)
+<small>**(Note: These screenshots represent the working prototype presented during the training).**<small>
 
 ---
 ## Key Features
@@ -67,9 +66,9 @@ This project was built using the following technologies:
 Developed by Taibah University Students
 
 *Seba Abdullah Al-Raddadi*
-*Rahaf Abdulrahman Al-Raddadi
-*Raghad Abdullah Al-Mutairi
-*Wisam Faraj Al-Juhani
+*Rahaf Abdulrahman Al-Raddadi*
+*Raghad Abdullah Al-Mutairi*
+*Wisam Faraj Al-Juhani*
 
 **Supervisor:** Eng.Amira Mohammed Al-Mugheer
 
