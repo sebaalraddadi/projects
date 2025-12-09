@@ -3,7 +3,6 @@
 
 > **Training Entity:** Prince Sultan Armed Forces Hospital
 ---
-
 ## About The Project 
 This project is an internal web system designed to streamline the documentation and tracking of daily tasks within the IT department. Currently, many departments rely on verbal or paper-based communication, leading to lost tasks and difficulty in tracking performance.
 
@@ -14,10 +13,10 @@ This project is an internal web system designed to streamline the documentation 
 ---
 ## ▶️ Project Demo / عرض عملي للمشروع
 
-**Web App IT Task Documentation
+**Web App IT Task Documentation**
 [**Watch the System Demo**](https://youtu.be/gItEAEKElzA)
----
 
+---
 ## Project Screenshots
 
 **1. Login Interface**
@@ -47,7 +46,6 @@ Based on the project scope:
 * **Data Analytics:** Integration with **Microsoft Power BI** for reporting.
 
 ---
-
 ## Tools & Technologies
 This project was built using the following technologies:
 
@@ -65,10 +63,10 @@ This project was built using the following technologies:
 ## Development Team
 Developed by Taibah University Students
 
-*Seba Abdullah Al-Raddadi*
-*Rahaf Abdulrahman Al-Raddadi*
-*Raghad Abdullah Al-Mutairi*
-*Wisam Faraj Al-Juhani*
+**Seba Abdullah Al-Raddadi**
+**Rahaf Abdulrahman Al-Raddadi**
+**Raghad Abdullah Al-Mutairi**
+**Wisam Faraj Al-Juhani**
 
 **Supervisor:** Eng.Amira Mohammed Al-Mugheer
 
