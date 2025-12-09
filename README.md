@@ -17,7 +17,7 @@ This project is an internal web system designed to streamline the documentation 
 [**Watch the System Demo**](https://youtu.be/gItEAEKElzA)
 
 ---
-## 📸 Project Screenshots
+## Project Screenshots
 
 **1. Login Interface**
 ![Login Page](https://raw.githubusercontent.com/sebaalraddadi/projects/main/log_in.png)
