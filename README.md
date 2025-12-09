@@ -63,10 +63,10 @@ This project was built using the following technologies:
 ## Development Team
 Developed by Taibah University Students
 
-**Seba Abdullah Al-Raddadi**
-**Rahaf Abdulrahman Al-Raddadi**
-**Raghad Abdullah Al-Mutairi**
-**Wisam Faraj Al-Juhani**
+* **Saba Abdullah Al-Raddadi**
+* **Rahaf Abdulrahman Al-Raddadi**
+* **Raghad Abdullah Al-Mutairi**
+* **Wisam Faraj Al-Juhani**
 
 **Supervisor:** Eng.Amira Mohammed Al-Mugheer
 
