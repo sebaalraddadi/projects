@@ -1,4 +1,4 @@
-# projects
+# IT-Task_Documentation
 # Internal Web App for IT Task Documentation
 
 > **Training Entity:** Prince Sultan Armed Forces Hospital
