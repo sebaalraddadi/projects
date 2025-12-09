@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تقييم المهمة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        .logo {
+            max-height: 80px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <!-- شعار المستشفى -->
+        <div class="text-center mb-4">
+            <img src="{{ url_for('static', filename='image/image.png.jpg') }}" alt="شعار المستشفى" class="logo">
+        </div>
+
+        <h3 class="mb-4 text-center">تقييم المهمة</h3>
+
+        <form method="post">
+            <div class="mb-3">
+                <label for="description" class="form-label">وصف المهمة:</label>
+                <textarea class="form-control" id="description" rows="3" disabled>{{ task.description }}</textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="rating" class="form-label">تقييم الموظف:</label>
+                <select class="form-select" id="rating" name="rating" required>
+                    <option value="">اختر التقييم</option>
+                    <option value="ممتاز">ممتاز</option>
+                    <option value="جيد جداً">جيد جداً</option>
+                    <option value="جيد">جيد</option>
+                    <option value="مقبول">مقبول</option>
+                    <option value="ضعيف">ضعيف</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">حفظ التقييم</button>
+            <a href="{{ url_for('show_requests') }}" class="btn btn-secondary">رجوع</a>
+        </form>
+    </div>
+
+</body>
+</html>

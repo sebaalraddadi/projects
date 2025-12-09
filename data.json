@@ -1,0 +1,263 @@
+[
+    {
+        "employee": "Rahaf",
+        "description": "تركيب طابعة",
+        "status": "تم الإنجاز",
+        "date": "2025-07-25",
+        "attachment": "قسم التقنية.pdf",
+        "notes": "جيد",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Saba",
+        "description": "تركيب جهاز",
+        "status": "تم الإنجاز",
+        "date": "2025-07-25",
+        "attachment": "",
+        "notes": "good",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Saba",
+        "description": "متابعة الانظمة و التطبيقات",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 03:52",
+        "attachment": null,
+        "notes": "",
+        "rating": "غير جيدة"
+    },
+    {
+        "employee": "Wisam",
+        "description": "تحديث نظام تشغيل لاجهزة العيادات الخارجية ",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:04",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Wisam",
+        "description": "اصلاح جهاز حاسوب معطل لأحد موظفين في قسم المختبر",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:05",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Wisam",
+        "description": "توصيل جهاز طابعة جديدة وربطها بالشبكة في قسم المالية ",
+        "status": "قيد المعالجة",
+        "date": "2025-07-12 21:06",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Saba",
+        "description": "اعادة ضبط كلمة مرور لأحد المستخدمين في نظام المستشفى ",
+        "status": "قيد المعالجة",
+        "date": "2025-07-12 21:07",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Raghad",
+        "description": "تنصيب برنامج مكافحة الفيروسات في جميع اجهزة قسم التمرض",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:08",
+        "attachment": null,
+        "notes": "",
+        "rating": "غير جيدة"
+    },
+    {
+        "employee": "Raghad",
+        "description": "متابعة البلاغات الفنية عبر نظام الدعم الفني و تحديث حالتها",
+        "status": "مرفوضة",
+        "date": "2025-07-12 21:09",
+        "attachment": null,
+        "notes": "",
+        "rating": "غير جيدة"
+    },
+    {
+        "employee": "Raghad",
+        "description": "اعداد شبكة Wi-Fi مؤقتة لورشة العمل الطبية",
+        "status": "قيد المعالجة",
+        "date": "2025-07-12 21:10",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Noura",
+        "description": "معالجة خلل في نظام حاضر ",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:11",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Noura",
+        "description": "اخذ نسخة احتياطية من قواعد البيانات الخاصة بنظام المرضى",
+        "status": "قيد المعالجة",
+        "date": "2025-07-12 21:12",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Lama",
+        "description": "تركيب جهاز بصمة جديد و ربطه بسيرفر النظام الرئيسي ",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:13",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Lama",
+        "description": "متابعة أخطاء تسجيل الدخول في نظام Oasis الطبي وتحليل سبب ظهور رسالة خطأ لموظف الاستقبال.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:15",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Lama",
+        "description": "تهيئة حساب مستخدم جديد في نظام Oasis وإعطاؤه صلاحيات محددة حسب الوظيفة.",
+        "status": "قيد المعالجة",
+        "date": "2025-07-12 21:15",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Lama",
+        "description": "التنسيق مع قسم المالية لإصلاح مشكلة في التقارير داخل نظام Oasis المالي.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:16",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Dana",
+        "description": "متابعة جهاز البصمة المرتبط بنظام TPS والتأكد من استجابة البصمة بشكل سليم في نقطة الدخول الرئيسية.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:16",
+        "attachment": null,
+        "notes": "",
+        "rating": "غير جيدة"
+    },
+    {
+        "employee": "Dana",
+        "description": "فحص الأجهزة المرتبطة بنظام TPS وتحديث الحالة من “مكتوبة بورقة صفراء” إلى “تمت الصيانة” بعد المعالجة.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:17",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Faisal",
+        "description": "التواصل مع الدعم الفني لنظام الحضور والانصراف (حاضر) بخصوص عدم مزامنة بيانات الحضور لبعض الموظفين.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:18",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Yousef",
+        "description": "تفعيل صلاحية “تقديم الطلبات التقنية” في نظام طلبات IT لموظف جديد في قسم العمليات.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:19",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Yousef",
+        "description": "متابعة طلبات الدعم الفني المقدمة عبر نظام طلبات IT والتأكد من إغلاق التذاكر المكتملة.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:19",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Yousef",
+        "description": "تنظيم أرشفة ملفات إدارية عبر نظام OpenText والتأكد من تحميلها بصيغة PDF.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:20",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Yousef",
+        "description": "تحديث بيانات الموظفين المؤرشفة في OpenText لضمان تطابقها مع النظام الإداري الجديد.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:20",
+        "attachment": null,
+        "notes": "",
+        "rating": "غير جيدة"
+    },
+    {
+        "employee": "Areej",
+        "description": " تحليل بيانات الأداء الشهري لقسم الأشعة باستخدام Power BI وإرسال التقرير إلى الإدارة.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:21",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Areej",
+        "description": " التحقق من نقاط الضعف في الأداء عبر لوحة مؤشرات Power BI الخاصة بخدمة العيادات.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:21",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Areej",
+        "description": "ربط شاشات صفوف الانتظار بنظام العيادات الخارجي والتأكد من عرض الأرقام بشكل مباشر.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:21",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Areej",
+        "description": "تشخيص خلل في شاشة صفوف الانتظار في قسم الأسنان واستبدال كابل HDMI تالف.",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:22",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Areej",
+        "description": "عداد Dashboards تفاعلية باستخدام Power BI لعرض بلاغات الدعم الفني حسب الأقسام.\r\n",
+        "status": "تم الإنجاز",
+        "date": "2025-07-12 21:22",
+        "attachment": null,
+        "notes": "",
+        "rating": "جيدة"
+    },
+    {
+        "employee": "Raghad",
+        "description": "تركيب اجهزه",
+        "status": "تم الإنجاز",
+        "date": "2025-07-27 12:20",
+        "attachment": "pdf",
+        "notes": "",
+        "rating": ""
+    }
+]

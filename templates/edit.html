@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تعديل المهمة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            padding-top: 40px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img.logo {
+            width: 100px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <img src="{{ url_for('static', filename='image/image.jpg') }}" alt="شعار المستشفى" class="logo">
+        <h3 class="text-center mb-4">تعديل المهمة</h3>
+        <form method="POST">
+            <div class="mb-3">
+                <label>وصف المهمة</label>
+                <textarea name="description" class="form-control" rows="4" required>{{ task.description }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label>الحالة</label>
+                <select name="status" class="form-control" required>
+                    <option value="قيد المراجعة" {% if task.status == 'قيد المراجعة' %}selected{% endif %}>قيد المراجعة</option>
+                    <option value="تم الإنجاز" {% if task.status == 'تم الإنجاز' %}selected{% endif %}>تم الإنجاز</option>
+                    <option value="مرفوض" {% if task.status == 'مرفوض' %}selected{% endif %}>مرفوض</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>ملاحظات المدير</label>
+                <textarea name="notes" class="form-control" rows="4">{{ task.notes }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">تحديث</button>
+        </form>
+    </div>
+</body>
+</html>

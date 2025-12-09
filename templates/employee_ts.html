@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مهامي المنجزة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            padding-top: 40px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        img.logo {
+            width: 100px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- شعار المستشفى -->
+        <img src="{{ url_for('static', filename='image/image.jpg') }}" alt="شعار المستشفى" class="logo">
+
+        <h2 class="text-center mb-4">مهامي المنجزة</h2>
+
+        {% if tasks %}
+            {% for task in tasks %}
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><strong>الوصف:</strong> {{ task.description }}</p>
+                        <p class="card-text"><strong>الحالة:</strong> {{ task.status }}</p>
+                        <p class="card-text"><strong>التاريخ:</strong> {{ task.date }}</p>
+                        <p class="card-text"><strong>ملاحظات المدير:</strong> {{ task.notes or "لا توجد ملاحظات" }}</p>
+                        <p class="card-text"><strong>التقييم:</strong> 
+                            {% if task.rating %}
+                                {{ task.rating }}
+                            {% else %}
+                                لا يوجد تقييم حتى الآن
+                            {% endif %}
+                        </p>
+                        {% if task.attachment %}
+                            <p class="card-text">
+                                <a href="{{ url_for('uploaded_file', filename=task.attachment) }}" target="_blank" class="btn btn-sm btn-info">عرض المرفق</a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-center">لا توجد مهام حتى الآن.</p>
+        {% endif %}
+
+        <div class="text-center mt-4">
+            <a href="{{ url_for('employee_home') }}" class="btn btn-secondary">العودة</a>
+        </div>
+    </div>
+</body>
+</html>

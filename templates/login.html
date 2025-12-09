@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>تسجيل الدخول</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            direction: rtl;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .logo {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .logo img {
+            width: 120px;
+        }
+        .login-container {
+            width: 360px;
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0, 128, 0, 0.2);
+            border-radius: 12px;
+            background-color: #e9f6ea;
+            color: #155724;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #155724;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #28a745;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #19692c;
+            background-color: #f0f9f1;
+        }
+        button {
+            margin-top: 25px;
+            width: 100%;
+            background-color: #28a745;
+            border: none;
+            padding: 12px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #19692c;
+        }
+        .error {
+            color: #dc3545;
+            margin-top: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='image/image.jpg') }}" alt="شعار المستشفى">
+    </div>
+
+    <div class="login-container">
+        <h1>تسجيل الدخول</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="POST" novalidate>
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</body>
+</html>

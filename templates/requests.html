@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>قائمة المهام</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .logo {
+            width: 100px;
+            display: block;
+            margin: 20px auto 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شعار المستشفى -->
+    <img src="{{ url_for('static', filename='image/image.jpg') }}" alt="شعار المستشفى" class="logo">
+
+    <!-- رسالة تم الحفظ -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert alert-success text-center" role="alert">
+          {{ messages[0] }}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <div class="container mt-4">
+        <h2 class="mb-4">مرحباً {{ session['username'] }} (المدير)</h2>
+
+        <!-- زر تصدير المهام إلى Excel -->
+        <a href="{{ url_for('export_to_excel') }}" class="btn btn-success mb-3">📤 تصدير المهام إلى Excel</a>
+
+        <div class="mb-3">
+            <input id="searchInput" type="text" class="form-control" placeholder="ابحث في المهام...">
+        </div>
+
+        <form method="POST" action="{{ url_for('submit_ratings') }}">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>اسم الموظف</th>
+                        <th>الوصف</th>
+                        <th>الحالة</th>
+                        <th>التاريخ</th>
+                        <th>ملاحظات المدير</th>
+                        <th>المرفق</th>
+                        <th>التقييم</th>
+                        <th>تعديل</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody id="tasksTable">
+                    {% for task in requests %}
+                    <tr>
+                        <td>{{ task.employee }}</td>
+                        <td>{{ task.description }}</td>
+                        <td>{{ task.status }}</td>
+                        <td>{{ task.date }}</td>
+                        <td>{{ task.notes or '—' }}</td>
+                        <td>
+                            {% if task.attachment %}
+                                <a href="{{ url_for('uploaded_file', filename=task.attachment) }}" target="_blank" class="btn btn-sm btn-info">عرض</a>
+                            {% else %}
+                                لا يوجد
+                            {% endif %}
+                        </td>
+                        <td>
+                            <select name="ratings_{{ loop.index0 }}" class="form-select form-select-sm">
+                                <option value="">اختر</option>
+                                <option value="جيدة" {% if task.rating == 'جيدة' %}selected{% endif %}>جيدة</option>
+                                <option value="غير جيدة" {% if task.rating == 'غير جيدة' %}selected{% endif %}>غير جيدة</option>
+                            </select>
+                        </td>
+                        <td><a href="{{ url_for('edit_task', task_id=loop.index0) }}" class="btn btn-sm btn-warning">تعديل</a></td>
+                        <td>
+                            <form method="POST" action="{{ url_for('delete_task', task_id=loop.index0) }}" onsubmit="return confirm('هل أنت متأكد من حذف المهمة؟');">
+                                <button type="submit" class="btn btn-sm btn-danger">حذف</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <button type="submit" class="btn btn-success">حفظ التقييمات</button>
+        </form>
+
+        <a href="{{ url_for('logout') }}" class="btn btn-secondary mt-3">تسجيل الخروج</a>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const tasksTable = document.getElementById('tasksTable');
+        searchInput.addEventListener("keyup", function () {
+            const filter = searchInput.value.toLowerCase();
+            const rows = tasksTable.getElementsByTagName("tr");
+            for (let i = 0; i < rows.length; i++) {
+                const rowText = rows[i].innerText.toLowerCase();
+                rows[i].style.display = rowText.includes(filter) ? "" : "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

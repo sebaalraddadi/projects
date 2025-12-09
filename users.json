@@ -1,0 +1,13 @@
+[
+    {"username": "Rahaf", "password": "rahaf123", "role": "manager"},
+    {"username": "Saba", "password": "saba123", "role": "employee"},
+    {"username": "Raghad", "password": "raghad123", "role": "employee"},
+    {"username": "Wisam", "password": "wisam123", "role": "employee"},
+    
+    {"username": "Noura", "password": "noura123", "role": "employee"},
+    {"username": "Lama", "password": "lama123", "role": "employee"},
+    {"username": "Dana", "password": "dana123", "role": "employee"},
+    {"username": "Faisal", "password": "faisal123", "role": "employee"},
+    {"username": "Yousef", "password": "yousef123", "role": "employee"},
+    {"username": "Areej", "password": "areej123", "role": "employee"}
+]
